@@ -1,22 +1,26 @@
 {
-  "name": "dsmeta",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ReisBH/dsmeta.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ReisBH/dsmeta/issues"
-  },
-  "homepage": "https://github.com/ReisBH/dsmeta#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "@types/react-datepicker": "4.4.2",
+    "axios": "0.27.2",
+    "react": "^18.2.0",
+    "react-datepicker": "4.8.0",
+    "react-dom": "^18.2.0",
+    "react-toastify": "9.0.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
   }
 }
